@@ -1,0 +1,22 @@
+PROYECTO CRUD DJANGO REACT
+#DJANGO
+    PASO 1 - CREAR ENTORNO VIRTUAL
+        -pythom -m venv venv
+        -source venv/Scripts/activate
+    PASO 2 - INSTALAR DEPENDENCIAS
+        -pip install django djangorestframework django-cors-headers 
+    PASO 3 - CREAR PROYECTO Y APP Y CONFIGURACION
+        -django-admin startproject backend
+        -cd backend
+        -python manage.py startapp api
+        -editar settings.py
+            INSTALLED_APPS = [
+            'api',
+            'django.contrib.admin',
+            'django.contrib.auth',
+            'django.contrib.contenttypes',
+            'django.contrib.sessions',
+            'django.contrib.messages',
+            'django.contrib.staticfiles',
+            ]
+    PASO 4 - CREAR MODELOS, SERIALIZERS,VIEWS 
